@@ -1,0 +1,15 @@
+﻿@model Vidiling.Models.Customer
+@{
+    ViewBag.Title = "ViewCustomer";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h1>@Model.Name</h1>
+<lu>
+    <li>@Model.MembershipType.Name</li>
+    @if (Model.Birthday != null)
+    {
+        <li>@Model.Birthday</li>}
+</lu>
+

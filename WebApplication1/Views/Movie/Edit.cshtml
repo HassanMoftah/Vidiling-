@@ -1,0 +1,17 @@
+﻿@model Vidiling.Models.Movie
+@{
+    ViewBag.Title = "ViewMovie";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>@Model.Name</h1>
+<lu>
+    <li>@Model.Name</li>
+
+    <li> <text>Genre :</text>  @Model.Genre.Name</li>
+    <li><text>Release Date :</text>@Model.ReleaseDate</li>
+    <li><text>Data Added :</text> @Model.DataAdded</li>
+    <li><text>Number In Stock :</text>@Model.NumberInStock</li>
+
+</lu>
+
